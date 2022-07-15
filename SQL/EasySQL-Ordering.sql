@@ -1,15 +1,16 @@
--- https://www.codewars.com/kata/593ed37c93350098d600001d
+/*
+https://www.codewars.com/kata/593ed37c93350098d600001d
 
--- Your task is to sort the information in the provided table 'companies' by number of employees (high to low).
--- Returned table should be in the same format as provided:
--- 
--- companies table schema
--- 
--- id
--- ceo
--- motto
--- employees
--- Solution should use pure SQL. Ruby is only used in test cases.
+Your task is to sort the information in the provided table 'companies' by number of employees (high to low).
+Returned table should be in the same format as provided:
+
+companies table schema
+* id
+* ceo
+* motto
+* employees
+Solution should use pure SQL. Ruby is only used in test cases.
+*/
 
 SELECT id, ceo, motto, employees
 FROM companies
