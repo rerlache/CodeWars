@@ -1,5 +1,6 @@
--- https://www.codewars.com/kata/5977b6641e250a661a0000f0
 /*
+https://www.codewars.com/kata/5977b6641e250a661a0000f0
+
 Your task is to create a SQL query which returns the maximum number of simultaneous uses of a service.
 Each usage ("visit") is logged with its entry and exit timestamps in a "visits" table structured as follows:
 
@@ -14,6 +15,9 @@ The visits table always contains at least one entry. Your query should return a 
 when_happened  earliest timestamp when there were visits_count concurrent visits
 visits_count   maximum count of overlapping visits
 */
+
+-- solution source: https://medium.com/jen-li-chen-in-data-science/codewars-sql-7fa8b03c25f7
+
 SELECT  v1.entry_time AS when_happened,
         COUNT(*) AS visits_count
 FROM visits v1
